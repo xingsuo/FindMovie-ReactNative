@@ -9,22 +9,7 @@ import { connect } from 'react-redux';
 
 import {fetchNowPlaying} from '../redux/app/movies/actions';
 
-class MovieCard extends PureComponent {
-    _onPress = () => {
-        this.props.onPressItem(this.props.id);
-    };
-    render() {
-        return (
-            <TouchableOpacity onPress={this._onPress} style={{height: 60, margin: 8, backgroundColor: '#fafafa'}}>
-                <View>
-                    <Text>
-                        {this.props.title}
-                    </Text>
-                </View>
-            </TouchableOpacity>
-        )
-    }
-}
+import MovieCard from '../components/Card';
 
 
 
@@ -41,7 +26,7 @@ class NowPlaying extends PureComponent {
         <MovieCard
             id={item.id}
             onPressItem={this._onPressItem}
-            title={item.title}
+            movie={item}
         />
     )
     render() {

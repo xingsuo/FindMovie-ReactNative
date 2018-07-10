@@ -20,7 +20,7 @@ const AppActivityTabNavigator = createMaterialTopTabNavigator(
       },
       {
         // ...TabNavigator.Presets.AndroidTopTabs,
-        tabBarPosition: 'top',
+        tabBarPosition: 'bottom',
         swipeEnabled: true,
         animationEnabled: true,
         lazy: true,
@@ -28,7 +28,7 @@ const AppActivityTabNavigator = createMaterialTopTabNavigator(
           upperCaseLabel: false,
           allowFontScaling: false,
           style: {
-            height: 50,
+            // height: 50,
             backgroundColor: '#e8f2f7',
             shadowColor: '#858585',
             shadowOffset: {
@@ -38,12 +38,12 @@ const AppActivityTabNavigator = createMaterialTopTabNavigator(
             shadowRadius: 1.6,
             shadowOpacity: 0.2,
           },
-          indicatorStyle: {
-            borderBottomColor: '#1e90ff',
-            borderBottomWidth: 3,
-          },
+          // indicatorStyle: {
+          //   borderBottomColor: '#1e90ff',
+          //   borderBottomWidth: 3,
+          // },
           tabStyle: {
-            height: 50,
+            // height: 50,
             marginBottom: 13,
           },
           labelStyle: {
