@@ -5,12 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import { YellowBox } from 'react-native';
+import YellowBox from 'react-native';
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated']);
+
 
 import AppActivityTabNavigator from './src/router/Navigators';
 
-export default class App extends Component {
+export default class App extends Component<{}> {
   render() {
     return (
       <AppActivityTabNavigator />

@@ -55,4 +55,8 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
+# vscode
 *TODO
+
+# flow
+*flow-typed/
